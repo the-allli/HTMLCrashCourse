@@ -37,6 +37,16 @@
     <!-- <footer>: Footer content, typically contains copyright or contact info -->
     <footer></footer>
 
+    <!-- Generic Tags -->
+    <!-- <div>: Generic block container -->
+    <div></div>
+    <!-- <span>: Used to group inline elements or text for styling or scripting  -->
+    <span></span>
+    <!-- The <hr /> tag creates a horizontal line (thematic break) across the page, often used to separate content. -->
+    <hr />
+    <!-- The <br /> tag inserts a single line break, moving the following content to a new line. -->
+    <br />
+
     <!-- Textual Content -->
     <!-- Headings -->
     <!-- <h1> to <h6>: Headings -->
@@ -165,16 +175,17 @@
     <!-- <ol>: Ordered list -->
     <!-- <li>: List item -->
     <ol>
-      <li>List Item</li>
+      <li>Ordered List Item</li>
     </ol>
     <!-- <ul>: Unordered list -->
     <ul>
-      <li>List Item</li>
+      <li>Unordered List Item</li>
     </ul>
     <!-- <dl>: Description list -->
     <!-- <dt>: Description term -->
     <!-- <dd>: Description definition -->
     <dl>
+      Description List
       <dt>Term</dt>
       <dd>Definition</dd>
     </dl>
@@ -200,7 +211,6 @@
       <option value="PHP"></option>
       <option value="Python"></option>
     </datalist>
-
     <!-- Table Content -->
     <!-- <table>: Table -->
     <!-- <caption>: Table caption -->
@@ -248,7 +258,6 @@
         <td>$53</td>
       </tr>
     </table>
-
     <!-- Forms -->
     <!-- <form>: Form -->
     <!-- <input>: Input field -->
@@ -257,51 +266,39 @@
     <form>
       <fieldset>
         <legend>All HTML Input Types</legend>
-
         <!-- Text -->
         <label for="text">Text:</label>
         <input type="text" id="text" name="text" /><br /><br />
-
         <!-- Password -->
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" /><br /><br />
-
         <!-- Email -->
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" /><br /><br />
-
         <!-- Number -->
         <label for="number">Number:</label>
         <input type="number" id="number" name="number" /><br /><br />
-
         <!-- Tel -->
         <label for="tel">Telephone:</label>
         <input type="tel" id="tel" name="tel" /><br /><br />
-
         <!-- URL -->
         <label for="url">URL:</label>
         <input type="url" id="url" name="url" /><br /><br />
-
         <!-- Search -->
         <label for="search">Search:</label>
         <input type="search" id="search" name="search" /><br /><br />
-
         <!-- Date -->
         <label for="date">Date:</label>
         <input type="date" id="date" name="date" /><br /><br />
-
         <!-- Time -->
         <label for="time">Time:</label>
         <input type="time" id="time" name="time" /><br /><br />
-
         <!-- Week -->
         <label for="week">Week:</label>
         <input type="week" id="week" name="week" /><br /><br />
-
         <!-- Month -->
         <label for="month">Month:</label>
         <input type="month" id="month" name="month" /><br /><br />
-
         <!-- Datetime-local -->
         <label for="datetime">Datetime-local:</label>
         <input
@@ -309,32 +306,26 @@
           id="datetime"
           name="datetime"
         /><br /><br />
-
         <!-- Color -->
         <label for="color">Color:</label>
         <input type="color" id="color" name="color" /><br /><br />
-
         <!-- Checkbox -->
         <label>Choose skills:</label><br />
         <input type="checkbox" id="html" name="skills" value="HTML" />
         <label for="html">HTML</label>
         <input type="checkbox" id="css" name="skills" value="CSS" />
         <label for="css">CSS</label><br /><br />
-
         <!-- Radio -->
         <label>Gender:</label><br />
         <input type="radio" id="male" name="gender" value="male" />
         <label for="male">Male</label>
         <input type="radio" id="female" name="gender" value="female" />
         <label for="female">Female</label><br /><br />
-
         <!-- File -->
         <label for="file">Upload file:</label>
         <input type="file" id="file" name="file" /><br /><br />
-
         <!-- Hidden -->
         <input type="hidden" name="userId" value="12345" />
-
         <!-- Range -->
         <label for="range">Volume (0–100):</label>
         <input
@@ -344,7 +335,6 @@
           min="0"
           max="100"
         /><br /><br />
-
         <!-- Select with optgroup -->
         <label for="country">Country:</label>
         <select id="country" name="country">
@@ -357,18 +347,15 @@
             <option value="fr">France</option>
           </optgroup></select
         ><br /><br />
-
         <!-- Textarea -->
         <label for="message">Message:</label><br />
         <textarea id="message" name="message" rows="4" cols="30"></textarea
         ><br /><br />
-
         <!-- Submit and Reset -->
         <input type="submit" value="Submit" />
         <input type="reset" value="Reset" />
       </fieldset>
     </form>
-
     <!-- <progress>: Progress bar -->
     <label for="progress">Loading Progress:</label><br />
     <progress id="progress" value="70" max="100">70%</progress><br />
@@ -382,20 +369,17 @@
     <!-- Embedded Content -->
     <!-- <img>: Image -->
     <img src="https://picsum.photos/200" alt="Placeholder image" /><br /><br />
-
     <!-- <picture>: Responsive images -->
     <picture>
       <source srcset="https://picsum.photos/200" media="(min-width: 800px)" />
       <img src="https://picsum.photos/200" alt="Responsive image" /> </picture
     ><br /><br />
-
     <!-- <figure> and <figcaption>: Image with caption -->
     <figure>
       <img src="https://picsum.photos/200" alt="Figure image" />
       <figcaption>This is a caption for the image above.</figcaption>
     </figure>
     <br /><br />
-
     <!-- <map> and <area>: Image map -->
     <img
       src="https://picsum.photos/200"
@@ -410,7 +394,6 @@
         alt="Example"
       /> </map
     ><br /><br />
-
     <!-- <iframe>: Inline frame -->
     <iframe
       src="https://picsum.photos"
@@ -419,27 +402,22 @@
       title="Example Iframe"
     ></iframe
     ><br /><br />
-
     <!-- <embed>: Embedded PDF or content -->
     <embed src="file.pdf" type="application/pdf" width="600" height="500" />
-
     <!-- <object>: External resource -->
     <object data="file.pdf" type="application/pdf" width="400" height="300">
       Your browser does not support embedded objects.</object
     ><br /><br />
-
     <!-- <video>: Video player -->
     <video width="320" height="240" controls>
       <source src="video.mp4" type="video/mp4" />
       Your browser does not support the video tag.</video
     ><br /><br />
-
     <!-- <audio>: Audio player -->
     <audio controls>
       <source src="audio.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.</audio
     ><br /><br />
-
     <!-- <canvas>: Drawing area -->
     <canvas
       id="myCanvas"
@@ -448,7 +426,6 @@
       style="border: 1px solid #000"
     ></canvas>
     <br /><br />
-
     <!-- <svg>: Vector graphics -->
     <svg width="200" height="100">
       <rect
@@ -467,23 +444,82 @@
       ctx.fillStyle = "#FF0000";
       ctx.fillRect(20, 20, 150, 50);
     </script>
-    <!-- <noscript>: Fallback for no JS -->
-    <noscript></noscript>
-    <!-- <template>: Client-side template -->
-    <!-- template: Hidden HTML for later use by scripts. -->
+    <!-- <noscript>: Fallback for users with JavaScript disabled -->
+    <noscript>
+      <p>JavaScript is disabled in your browser. Some features may not work.</p>
+    </noscript>
+    <!-- A mechanism for holding client- side content that is not to be rendered when
+    a page is loaded but may subsequently be instantiated during runtime using
+    JavaScript.  -->
     <template> </template>
-    <!-- <slot>: Web components slot -->
-    <!-- slot: Placeholder for content in custom elements (Web Components). -->
-    <slot></slot>
+    <template id="custom-paragraph">
+      <p>Template Content</p>
+    </template>
+    <script>
+      let template = document.getElementById("custom-paragraph");
+      let templateContent = template.content;
+      document.body.appendChild(templateContent);
+    </script>
+    <!-- Using templates with web components -->
+    <template id="web-component">
+      <style>
+        p {
+          color: white;
+          background-color: #666;
+          padding: 5px;
+        }
+      </style>
+      <p>Custom Web-Component</p>
+    </template>
+    <script>
+      customElements.define(
+        "my-paragraph",
+        class extends HTMLElement {
+          constructor() {
+            super();
+            let template = document.getElementById("web-component");
+            let templateContent = template.content;
 
-    <!-- Generic Tags -->
-    <!-- <div>: Generic block container -->
-    <div></div>
-    <!-- <span>: Used to group inline elements or text for styling or scripting  -->
-    <span></span>
-    <!-- The <hr /> tag creates a horizontal line (thematic break) across the page, often used to separate content. -->
-    <hr />
-    <!-- The <br /> tag inserts a single line break, moving the following content to a new line. -->
-    <br />
+            const shadowRoot = this.attachShadow({ mode: "open" });
+            shadowRoot.appendChild(templateContent.cloneNode(true));
+          }
+        }
+      );
+    </script>
+    <my-paragraph></my-paragraph>
+    <!-- A placeholder inside a web component that users can fill with their own markup, with the effect of composing different DOM trees together. -->
+    <!-- Using templates with web components and slots(Adding flexibility with slots)-->
+    <template id="slot-component">
+      <style>
+        p {
+          color: white;
+          background-color: #da2222;
+          padding: 5px;
+        }
+      </style>
+      <p><slot name="my-text">My default slot-text</slot></p>
+    </template>
+    <script>
+      customElements.define(
+        "slot-paragraph",
+        class extends HTMLElement {
+          constructor() {
+            super();
+            let template = document.getElementById("slot-component");
+            let templateContent = template.content;
+
+            const shadowRoot = this.attachShadow({ mode: "open" });
+            shadowRoot.appendChild(templateContent.cloneNode(true));
+          }
+        }
+      );
+    </script>
+    <slot-paragraph>
+      <span slot="my-text">Let's have some different text!</span>
+      <ul slot="my-text">
+        <li>Let's have some different text!</li>
+        <li>In a list!</li>
+      </ul>
+    </slot-paragraph>
   </body>
 </html>
