@@ -1,20 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head> </head>
-
+  <head>
+    <title>Miscellaneous Tags</title>
+  </head>
   <body>
-    <!-- Scripting -->
-    <!-- <script>: JavaScript -->
-    <script>
-      const canvas = document.getElementById("myCanvas");
-      const ctx = canvas.getContext("2d");
-      ctx.fillStyle = "#FF0000";
-      ctx.fillRect(20, 20, 150, 50);
-    </script>
-    <!-- <noscript>: Fallback for users with JavaScript disabled -->
-    <noscript>
-      <p>JavaScript is disabled in your browser. Some features may not work.</p>
-    </noscript>
     <!-- A mechanism for holding client- side content that is not to be rendered when
     a page is loaded but may subsequently be instantiated during runtime using
     JavaScript.  -->
@@ -88,5 +77,11 @@
         <li>In a list!</li>
       </ul>
     </slot-paragraph>
+    <!-- <embed>: Embedded PDF or content -->
+    <embed src="file.pdf" type="application/pdf" width="600" height="500" />
+    <!-- <object>: External resource -->
+    <object data="file.pdf" type="application/pdf" width="400" height="300">
+      Your browser does not support embedded objects.</object
+    ><br /><br />
   </body>
 </html>

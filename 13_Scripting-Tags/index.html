@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Scripting Tags</title>
+  </head>
+  <body>
+    <!-- Scripting -->
+    <!-- <script>: JavaScript -->
+    <script>
+      const canvas = document.getElementById("myCanvas");
+      const ctx = canvas.getContext("2d");
+      ctx.fillStyle = "#FF0000";
+      ctx.fillRect(20, 20, 150, 50);
+    </script>
+    <!-- <noscript>: Fallback for users with JavaScript disabled -->
+    <noscript>
+      <p>JavaScript is disabled in your browser. Some features may not work.</p>
+    </noscript>
+  </body>
+</html>
