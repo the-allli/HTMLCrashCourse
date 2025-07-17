@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Block vs Inline Tags</title>
+  </head>
+  <body>
+    <div>
+      <h1>Block-Level Elements</h1>
+      <p>
+        Starts on a New Line: A block-level element always begins on a new line.
+        Even if there's available space on the current line, a block element
+        will drop to the next line.
+      </p>
+      <p>
+        Takes Full Width: By default, block-level elements will occupy 100% of
+        the available width of their parent container, pushing other elements
+        below them.
+      </p>
+      <p>
+        Box Model Control: You can fully control the width, height, margin (all
+        four sides: top, right, bottom, left), and padding (all four sides) of
+        block-level elements using CSS.
+      </p>
+      <p>
+        Can Contain: Block-level elements can typically contain both other
+        block-level elements and inline-level elements.
+      </p>
+    </div>
+    <div>
+      <h1>Inline-Level Elements</h1>
+      <p>
+        Does Not Start on a New Line: An inline-level element does not force a
+        new line; it continues on the same line as its preceding content, as
+        long as there's horizontal space.
+      </p>
+      <p>
+        Takes Content Width Only: Inline elements only occupy as much width as
+        their content requires. They don't stretch to fill the available space.
+      </p>
+      <p>
+        Limited Box Model Control: width and height properties generally do not
+        apply to inline elements (they are ignored). margin-top and
+        margin-bottom generally do not apply (they are ignored and won't create
+        vertical spacing). padding-top and padding-bottom do apply, but they
+        won't affect the layout of elements around them vertically. They can
+        overlap surrounding content. margin-left, margin-right, padding-left,
+        and padding-right do apply and will create horizontal spacing.
+      </p>
+      <p>
+        Can Contain: Inline-level elements can typically only contain data
+        (text) or other inline-level elements. They generally cannot contain
+        block-level elements.
+      </p>
+    </div>
+  </body>
+</html>
