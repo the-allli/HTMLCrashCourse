@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Link & Media Tags</title>
+  </head>
+  <body>
+    <!-- <a>: Hyperlink -->
+    <a href="#">Link</a>
+    <!-- Embedded Content -->
+    <!-- <img>: Image -->
+    <img src="https://picsum.photos/200" alt="Placeholder image" /><br /><br />
+    <!-- <picture>: Responsive images -->
+    <picture>
+      <source srcset="https://picsum.photos/200" media="(min-width: 800px)" />
+      <img src="https://picsum.photos/200" alt="Responsive image" /> </picture
+    ><br /><br />
+    <!-- <figure> and <figcaption>: Image with caption -->
+    <figure>
+      <img src="https://picsum.photos/200" alt="Figure image" />
+      <figcaption>This is a caption for the image above.</figcaption>
+    </figure>
+    <br /><br />
+    <!-- <map> and <area>: Image map -->
+    <img
+      src="https://picsum.photos/200"
+      usemap="#samplemap"
+      alt="Image with map"
+    />
+    <map name="samplemap">
+      <area
+        shape="rect"
+        coords="0,0,100,100"
+        href="https://example.com"
+        alt="Example"
+      /> </map
+    ><br /><br />
+    <!-- <iframe>: Inline frame -->
+    <iframe
+      src="https://picsum.photos"
+      width="400"
+      height="200"
+      title="Example Iframe"
+    ></iframe
+    ><br /><br />
+    <!-- <embed>: Embedded PDF or content -->
+    <embed src="file.pdf" type="application/pdf" width="600" height="500" />
+    <!-- <object>: External resource -->
+    <object data="file.pdf" type="application/pdf" width="400" height="300">
+      Your browser does not support embedded objects.</object
+    ><br /><br />
+    <!-- <video>: Video player -->
+    <video width="320" height="240" controls>
+      <source src="video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.</video
+    ><br /><br />
+    <!-- <audio>: Audio player -->
+    <audio controls>
+      <source src="audio.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.</audio
+    ><br /><br />
+    <!-- <canvas>: Drawing area -->
+    <canvas
+      id="myCanvas"
+      width="200"
+      height="100"
+      style="border: 1px solid #000"
+    ></canvas>
+    <br /><br />
+    <!-- <svg>: Vector graphics -->
+    <svg width="200" height="100">
+      <rect
+        width="200"
+        height="100"
+        style="fill: lightblue; stroke: black; stroke-width: 2"
+      />
+      <text x="50" y="55" font-size="20" fill="black">Hello SVG</text>
+    </svg>
+  </body>
+</html>
