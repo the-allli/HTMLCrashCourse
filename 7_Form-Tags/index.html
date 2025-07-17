@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form Tags</title>
+  </head>
+  <body>
+    <!-- Forms -->
+    <!-- <form>: Form -->
+    <!-- <input>: Input field -->
+    <!-- <button>: Button -->
+    <!-- <select>: Drop-down list -->
+    <form>
+      <fieldset>
+        <legend>All HTML Input Types</legend>
+        <!-- Text -->
+        <label for="text">Text:</label>
+        <input type="text" id="text" name="text" /><br /><br />
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" /><br /><br />
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" /><br /><br />
+        <!-- Number -->
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number" /><br /><br />
+        <!-- Tel -->
+        <label for="tel">Telephone:</label>
+        <input type="tel" id="tel" name="tel" /><br /><br />
+        <!-- URL -->
+        <label for="url">URL:</label>
+        <input type="url" id="url" name="url" /><br /><br />
+        <!-- Search -->
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search" /><br /><br />
+        <!-- Date -->
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" /><br /><br />
+        <!-- Time -->
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" /><br /><br />
+        <!-- Week -->
+        <label for="week">Week:</label>
+        <input type="week" id="week" name="week" /><br /><br />
+        <!-- Month -->
+        <label for="month">Month:</label>
+        <input type="month" id="month" name="month" /><br /><br />
+        <!-- Datetime-local -->
+        <label for="datetime">Datetime-local:</label>
+        <input
+          type="datetime-local"
+          id="datetime"
+          name="datetime"
+        /><br /><br />
+        <!-- Color -->
+        <label for="color">Color:</label>
+        <input type="color" id="color" name="color" /><br /><br />
+        <!-- Checkbox -->
+        <label>Choose skills:</label><br />
+        <input type="checkbox" id="html" name="skills" value="HTML" />
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="skills" value="CSS" />
+        <label for="css">CSS</label><br /><br />
+        <!-- Radio -->
+        <label>Gender:</label><br />
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label><br /><br />
+        <!-- File -->
+        <label for="file">Upload file:</label>
+        <input type="file" id="file" name="file" /><br /><br />
+        <!-- Hidden -->
+        <input type="hidden" name="userId" value="12345" />
+        <!-- Range -->
+        <label for="range">Volume (0–100):</label>
+        <input
+          type="range"
+          id="range"
+          name="volume"
+          min="0"
+          max="100"
+        /><br /><br />
+        <!-- Select with optgroup -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <optgroup label="Asia">
+            <option value="pk">Pakistan</option>
+            <option value="in">India</option>
+          </optgroup>
+          <optgroup label="Europe">
+            <option value="uk">United Kingdom</option>
+            <option value="fr">France</option>
+          </optgroup></select
+        ><br /><br />
+        <!-- <progress>: Progress bar -->
+        <label for="progress">Loading Progress:</label><br />
+        <progress id="progress" value="70" max="100">70%</progress><br />
+        <!-- <meter>: Scalar measurement -->
+        <label for="meter">Battery Level:</label><br />
+        <meter value="0.6" min="0" max="1">60%</meter>
+        <!-- Textarea -->
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="4" cols="30"></textarea
+        ><br /><br />
+        <!-- Submit and Reset -->
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </fieldset>
+    </form>
+  </body>
+</html>
